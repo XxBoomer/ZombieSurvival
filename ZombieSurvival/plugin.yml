@@ -1,0 +1,11 @@
+name: XxBoomer_ZS
+author: XxBoomer
+description: ZombieSurvival plugin
+main: svile\sw\SWmain
+version: 0.7dev
+api: [3.0.0-ALPHA4]
+load: STARTUP
+
+commands:
+ zs:
+  description: ZombieSurvivals main command
