@@ -37,6 +37,8 @@
  * - no one
  *
  */
+
+
 namespace svile\sw\utils\skin;
 class PngSkin extends Skin
 {
@@ -49,6 +51,8 @@ class PngSkin extends Skin
     {
         parent::__construct($path, $bytes);
     }
+    
+    
     /**
      * @return bool
      */
@@ -77,6 +81,8 @@ class PngSkin extends Skin
             return true;
         return false;
     }
+    
+    
     final public function save()
     {
         if (!extension_loaded('gd') || !$this->ok || strtolower(pathinfo($this->getPath(false), PATHINFO_EXTENSION)) != 'png' || !is_dir(pathinfo($this->getPath(false), PATHINFO_DIRNAME)))
